@@ -21,6 +21,6 @@ For authenticating using xoauth2 follow the steps bellow:
 The command bellow could be use as example:
 
 ```bash
-docker run --rm -it -v /path/to/cert.p12:/cert.p12 sandromello/imapsync --buffersize 8192000 --nosyncacls --subscribe --syncinternaldates --authuser1 --authmech1 PLAIN --authuser1 admin-imap@origin.domain.tld --host1 host1-address --user1 account@origin.domain.tld --password1 origin-pass --allowsizemismatch --authmech2 XOAUTH2 --host2 imap.gmail.com --user2 google-account@dest.domain.tld --password2 'service-account@developer.gserviceaccount.com;cert.p12' --nofoldersizes --ssl2 --dry --nolog
+docker run --rm -it -v /path/to/cert.p12:/cert.p12 inova/imapsync --buffersize 8192000 --nosyncacls --subscribe --syncinternaldates --authuser1 --authmech1 PLAIN --authuser1 admin-imap@origin.domain.tld --host1 host1-address --user1 account@origin.domain.tld --password1 origin-pass --allowsizemismatch --authmech2 XOAUTH2 --host2 imap.gmail.com --user2 google-account@dest.domain.tld --password2 'service-account@developer.gserviceaccount.com;cert.p12' --nofoldersizes --ssl2 --dry --nolog
 ```
 
