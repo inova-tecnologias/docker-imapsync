@@ -36,7 +36,6 @@ RUN perl -MCPAN -e "install 'Mail::IMAPClient'" && \
     perl -MCPAN -e "install 'Crypt::OpenSSL::RSA'"
     
 WORKDIR /
-ADD Migrator-6b319ccce4a6-Automatos.p12 /
 RUN git clone https://github.com/sandromello/imapsync.git
 RUN cd imapsync \
    && make \
